@@ -1,4 +1,69 @@
-.App {
+body {
+  background-color: black;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 10px; */
+}
+
+.nav {
+  grid-column: 1;
+  grid-row: 1/3;
+  border-right: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+.messages {
+  color: white;
+  grid-column: 2/5;
+  grid-row: 2;
+  height: 100vh;
+}
+
+.message {
+  align-content: center;
+  margin: 5px 10px 5px 10px;
+  padding-left: 15px;
+  border: 1px solid #657786;
+  border-radius: 20px;
+  background-color: #14171a;
+}
+
+.message-content {
+  padding: 5px
+}
+
+.message-user {
+  text-align: right;
+  padding: 0px 15px 10px;
+}
+
+.new-message {
+  margin: 20px 5px 5px 10px;
+  grid-column: 2/5;
+  grid-row: 1;
+  height: 100px;
+  border-bottom: 1px solid white;
+}
+
+.new-message-form .content {
+  height: 80px;
+  width: 82%;
+  text-align: left;
+  background-color: black;
+  color: white
+}
+
+.new-message-form .submit {
+  height: 88px;
+  width: 15%;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +100,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
